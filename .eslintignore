@@ -1,8 +1,0 @@
-/.git
-/.vscode
-/.idea
-.next
-.husky
-node_modules
-build
-dist

@@ -8,8 +8,6 @@
     "prepare": "husky install",
     "test": "lint-staged",
     "prettier": "prettier --write .",
-    "eslint": "eslint --ext .js,.jsx .",
-    "eslint:fix": "eslint --ext .js,.jsx --fix .",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
     "plop": "plop"
@@ -19,21 +17,12 @@
     "classnames": "2.3.1",
     "next": "12.0.2",
     "postcss-flexbugs-fixes": "5.0.2",
-    "prop-types": "15.7.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "sass": "1.43.4"
   },
   "devDependencies": {
-    "eslint": "8.1.0",
-    "eslint-config-airbnb": "18.2.1",
-    "eslint-config-prettier": "8.3.0",
-    "eslint-import-resolver-alias": "1.1.2",
-    "eslint-plugin-import": "2.25.2",
-    "eslint-plugin-jsx-a11y": "6.4.1",
-    "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-react": "7.26.1",
-    "eslint-plugin-react-hooks": "4.2.0",
+    "@types/react": "17.0.37",
     "husky": "7.0.4",
     "lint-staged": "11.2.6",
     "plop": "2.7.6",
@@ -42,16 +31,13 @@
     "stylelint": "14.0.1",
     "stylelint-config-recommended": "6.0.0",
     "stylelint-order": "5.0.0",
-    "stylelint-scss": "4.0.0"
+    "stylelint-scss": "4.0.0",
+    "typescript": "4.5.2"
   },
   "lint-staged": {
     "*.scss": [
       "prettier --write",
       "stylelint --fix"
-    ],
-    "*.(js|jsx)": [
-      "prettier --write",
-      "eslint --fix"
     ]
   }
 }

@@ -11,7 +11,7 @@ function config(plop) {
 		actions: [
 			{
 				type: 'add',
-				path: 'components/{{kebabCase name}}/{{kebabCase name}}.jsx',
+				path: 'components/{{kebabCase name}}/{{kebabCase name}}.tsx',
 				templateFile: '.plop/component-template.hbs',
 			},
 			{
@@ -21,7 +21,7 @@ function config(plop) {
 			},
 			{
 				type: 'add',
-				path: 'components/{{kebabCase name}}/index.js',
+				path: 'components/{{kebabCase name}}/index.ts',
 				template: "export { default } from './{{kebabCase name}}';\n",
 			},
 		],
