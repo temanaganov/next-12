@@ -1,0 +1,67 @@
+{
+  "env": { "es6": true, "browser": true, "node": true },
+  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:prettier/recommended"],
+  "plugins": ["@typescript-eslint", "import", "react", "react-hooks", "jsx-a11y"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "ecmaFeatures": {
+      "legacyDecorators": true,
+      "allowImportExportEverywhere": true,
+      "jsx": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    },
+    "import/extensions": [".js", ".jsx", ".ts", "tsx"]
+  },
+  "rules": {
+    "camelcase": "off",
+    "no-constant-condition": "error",
+    "no-dupe-else-if": "error",
+    "no-import-assign": "error",
+    "no-loss-of-precision": "error",
+    "no-promise-executor-return": "error",
+    "no-setter-return": "error",
+    "no-unreachable-loop": "error",
+    "no-useless-backreference": "error",
+    "no-restricted-exports": "off",
+    "default-case-last": "error",
+    "default-param-last": "error",
+    "grouped-accessor-pairs": "error",
+    "no-constructor-return": "error",
+    "import/prefer-default-export": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/forbid-prop-types": "off",
+    "react/function-component-definition": "off",
+    "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "error",
+      {
+        "depth": 25
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {},
+      {
+        "usePrettierrc": true
+      }
+    ]
+  }
+}
