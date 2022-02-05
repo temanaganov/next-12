@@ -69,6 +69,12 @@
     "selector-descendant-combinator-no-non-space": true,
     "selector-pseudo-class-case": "lower",
     "selector-pseudo-class-parentheses-space-inside": "never",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ],
     "selector-pseudo-element-case": "lower",
     "selector-type-case": "lower",
     "selector-list-comma-newline-after": "always",
