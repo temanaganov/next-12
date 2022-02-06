@@ -8,8 +8,8 @@
     "prepare": "husky install",
     "test": "lint-staged",
     "prettier": "prettier --write .",
-    "eslint": "eslint --ext .js,.jsx,.ts,.tsx .",
-    "eslint:fix": "eslint --ext .js,.jsx,.ts,.tsx --fix .",
+    "eslint": "eslint --ext .ts,.tsx .",
+    "eslint:fix": "eslint --ext .ts,.tsx --fix .",
     "stylelint": "stylelint '**/*.scss'",
     "stylelint:fix": "stylelint '**/*.scss' --fix",
     "plop": "plop"
@@ -29,6 +29,7 @@
     "@typescript-eslint/parser": "5.4.0",
     "eslint": "8.3.0",
     "eslint-config-airbnb": "19.0.1",
+    "eslint-config-airbnb-typescript": "16.1.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-import-resolver-typescript": "2.5.0",
     "eslint-plugin-import": "2.25.3",
@@ -52,7 +53,7 @@
       "prettier --write",
       "stylelint --fix"
     ],
-    "*.(js|jsx|ts|tsx)": [
+    "*.(ts|tsx)": [
       "prettier --write",
       "eslint --fix"
     ]
