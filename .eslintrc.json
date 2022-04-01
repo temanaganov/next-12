@@ -1,41 +1,28 @@
 {
   "env": { "es6": true, "browser": true, "node": true },
-  "extends": ["airbnb", "plugin:react/recommended", "plugin:react-hooks/recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "airbnb",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
   "plugins": ["@typescript-eslint", "import", "react", "react-hooks", "jsx-a11y"],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaVersion": 2020,
-    "sourceType": "module",
-    "requireConfigFile": false,
-    "ecmaFeatures": {
-      "legacyDecorators": true,
-      "allowImportExportEverywhere": true,
-      "jsx": true
-    }
+    "project": "./tsconfig.json"
   },
   "settings": {
     "import/resolver": {
       "typescript": {}
     },
-    "import/extensions": [".js", ".jsx", ".ts", "tsx"]
+    "import/extensions": ["ts", "tsx"]
   },
   "rules": {
-    "camelcase": "off",
-    "no-constant-condition": "error",
-    "no-dupe-else-if": "error",
-    "no-import-assign": "error",
-    "no-loss-of-precision": "error",
-    "no-promise-executor-return": "error",
-    "no-setter-return": "error",
-    "no-unreachable-loop": "error",
-    "no-useless-backreference": "error",
+    "@typescript-eslint/naming-convention": "off",
     "no-restricted-exports": "off",
-    "no-unused-vars": "off",
-    "no-constructor-return": "error",
-    "@typescript-eslint/no-unused-vars": "error",
-    "default-case-last": "error",
-    "default-param-last": "error",
-    "grouped-accessor-pairs": "error",
+    "no-underscore-dangle": "off",
+    "consistent-return": "off",
     "react/jsx-props-no-spreading": "off",
     "react/forbid-prop-types": "off",
     "react/function-component-definition": "off",
@@ -46,8 +33,6 @@
       "error",
       "ignorePackages",
       {
-        "js": "never",
-        "jsx": "never",
         "ts": "never",
         "tsx": "never"
       }
