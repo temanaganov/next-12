@@ -11,17 +11,17 @@ function config(plop) {
 		actions: [
 			{
 				type: 'add',
-				path: 'components/{{kebabCase name}}/{{kebabCase name}}.tsx',
+				path: 'src/components/{{kebabCase name}}/{{kebabCase name}}.tsx',
 				templateFile: '.plop/component-template.hbs',
 			},
 			{
 				type: 'add',
-				path: 'components/{{kebabCase name}}/{{kebabCase name}}.module.scss',
+				path: 'src/components/{{kebabCase name}}/{{kebabCase name}}.module.scss',
 				templateFile: '',
 			},
 			{
 				type: 'add',
-				path: 'components/{{kebabCase name}}/index.ts',
+				path: 'src/components/{{kebabCase name}}/index.ts',
 				template: "export { default } from './{{kebabCase name}}';\n",
 			},
 		],
